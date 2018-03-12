@@ -19,7 +19,7 @@
 # initialize the board
 # => could use an array
 #   => one array [0, 1, 2, 3, 4, 5, 6, 7, 8]
-#   => three nested arrays within a container array
+#   => or three nested arrays within a container array
 board = [[0, 1, 2],
          [0, 1, 2],
          [0, 1, 2]]
@@ -32,9 +32,13 @@ player = []
 # keep track of computer turn
 #   store computer choice in a variable
 computer = []
+# computer's turn could be random, or could have some strategy. random would be simplest to start with.
 
 # some logic to determine the winner
   # horizontal rows
   # vertical columns
   # diagonals
 
+# once a position on the board has been used, it cannot be used again.
+# player can only mark unused spaces
+# computer can only mark unused spaces
