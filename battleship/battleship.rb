@@ -113,10 +113,8 @@ def input
 end
 
 # The computer picks a random coordinate
-def comp_input
-  letter = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
-  number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-  p letter.sample + number.sample.to_s
+def comp_input where
+  p "Computer has shot #{where}"
 end
 
 def show_board grid
@@ -132,6 +130,7 @@ end
 # returns true if shot is a hit
 def hit? which_board, coordinates
   shot(which_board, coordinates) 
+  comp_input coordinates if which_board == @player_board
   @com_shot_board.delete(coordinates) if which_board == @player_board
   true if which_board["#{coordinates}"] =~ /[ABCDS]/
 end
@@ -141,27 +140,21 @@ def shot which_board, coordinates
 end
 
 
-
-
-
 def cpu_turn
   narrator("17")
-  hit? @player_board, @com_shot_board.keys.sample
-  # ************************
+  which_sunk(hit?(@player_board, @com_shot_board.keys.sample))
+  
   declare_winner
-  player_turn
+  player_turn if !@game_end
 end
 
 def player_turn
   narrator("18")
-  hit? @computer, input
-  # ************************
+  which_sunk(hit?(@computer, input))
+  
   declare_winner
-  cpu_turn
+  cpu_turn if !game_end
 end
-
-
-
 
 
 # UI PROMPTS
@@ -170,7 +163,15 @@ end
 
 def narrator(script_line_num)
   prompt = {
-    '1' => "Welcome to BattleShip!",
+    '1' => "
+██████╗  █████╗ ████████╗████████╗██╗     ███████╗███████╗██╗  ██╗██╗██████╗
+██╔══██╗██╔══██╗╚══██╔══╝╚══██╔══╝██║     ██╔════╝██╔════╝██║  ██║██║██╔══██╗
+██████╔╝███████║   ██║      ██║   ██║     █████╗  ███████╗███████║██║██████╔╝
+██╔══██╗██╔══██║   ██║      ██║   ██║     ██╔══╝  ╚════██║██╔══██║██║██╔═══╝
+██████╔╝██║  ██║   ██║      ██║   ███████╗███████╗███████║██║  ██║██║██║    
+╚═════╝ ╚═╝  ╚═╝   ╚═╝      ╚═╝   ╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝╚═╝╚═╝    
+                                                                           
+HEREDOC",
     '2' => "You know how to play, right?",
     '3' => "pick your country",
     '4' => "pick your opponent's country",
@@ -190,7 +191,7 @@ def narrator(script_line_num)
     '22' => "it is your turn",
     '23' => "Somebody wins",
     '24' => "game over",
-    '25' => "do you want to play again?"
+    '25' => "do you want to play again?",
     '26' => "You sunk a ship!"
   }
   p prompt[script_line_num]
@@ -261,7 +262,7 @@ def player_select
   letter = "C" if counter == 3
   letter = "S" if counter == 4
   letter = "D" if counter == 5
-
+puts letter
   select_counter = 0
     while select_counter < selections
       puts "Select a location for your #{@choosing}"
@@ -280,10 +281,28 @@ end
 def declare_winner
   if @player_sunk_ships.count == 5
     puts "#{@user_country} wins! Player 1 wins! "
-    break
+    @game_end = true
   elsif @computer_sunk_ships.count == 5
     puts "#{@cpu_country} wins! Computer wins!"
-    break
+    @game_end = true
   end
 end
 
+def start
+  @game_end = false
+  narrator('1')
+  narrator('3')
+  @user_country = gets.chomp
+  narrator('4')
+  @cpu_country = gets.chomp
+  narrator('5')
+  show_board @player_board
+  narrator('6')
+  player_select
+  comp_select
+  narrator('9')
+  narrator('10')
+  player_turn
+end
+
+start
