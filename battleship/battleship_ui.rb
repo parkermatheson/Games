@@ -1,7 +1,9 @@
 @computer = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
 @shot_board = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
 @player_board = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
+@com_shot_board = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
 
+# Computer sets up their board
 def comp_select
 
   selection = rand(1..3)
@@ -97,7 +99,7 @@ def comp_select
 end
 end
 
-
+# The user picks a coordinate on the board
 def input
   coordinates = gets.chomp.upcase
   if coordinates =~ /\A[A-J][0-9]\z|\A[A-J]10\z/
@@ -127,14 +129,15 @@ def show_board grid
     end
 end
 
+# returns true if shot is a hit
 def hit? which_board, coordinates
   shot(which_board, coordinates) 
+  @com_shot_board.delete(coordinates) if which_board == @player_board
   true if which_board["#{coordinates}"] =~ /[ABCDS]/
 end
 
 def shot which_board, coordinates
   which_board["#{coordinates}"] =~ /[ABCDS]/ ? which_board["#{coordinates}"] = "X" : which_board["#{coordinates}"] = "O"
-  if which_board == @computer 
 end
 
 
@@ -143,13 +146,17 @@ end
 
 def cpu_turn
   narrator("17")
+  hit? @player_board, @com_shot_board.keys.sample
   ************************
+  declare_winner
   player_turn
 end
 
 def player_turn
   narrator("18")
+  hit? @computer, input
   ************************
+  declare_winner
   cpu_turn
 end
 
@@ -158,7 +165,6 @@ end
 
 
 # UI PROMPTS
-# (I know this sucks, but it's functional. refine later.)
 @user_country = ""
 @cpu_country = ""
 
@@ -192,8 +198,8 @@ end
 
 
 
-/CODE FOR DETERIMING IF A HIT SUNK A SHIP AND WHAT SHIP IT WAS FOR COMPUTER AND PERSON.
-/REQUIRES THESE VARIABLES
+# CODE FOR DETERIMING IF A HIT SUNK A SHIP AND WHAT SHIP IT WAS FOR COMPUTER AND PERSON.
+# REQUIRES THESE VARIABLES
 @computer_sunk_ships = []
 @player_sunk_ships = []
 @player_current_sunk_ship = []
@@ -230,4 +236,54 @@ def which_sunk result_of_attempt
   end
 end
 
+def player_select
+
+  loopcount = 5
+  counter = 1
+
+  while counter < loopcount
+    system "clear"
+    show_board @player_board
+  @choosing = 'Aircraft Carier' if counter == 1
+  @choosing = 'Battleship' if counter == 2
+  @choosing = 'Cruiser' if counter == 3
+  @choosing = 'Submarine' if counter == 4
+  @choosing = 'Destroyer' if counter == 5
+
+  selections = 6 if counter == 1
+  selections = 5 if counter == 2
+  selections = 4 if counter == 3
+  selections = 4 if counter == 4
+  selections = 3 if counter == 5
+
+  letter = "A" if counter == 1
+  letter = "B" if counter == 2
+  letter = "C" if counter == 3
+  letter = "S" if counter == 4
+  letter = "D" if counter == 5
+
+  select_counter = 0
+    while select_counter < selections
+      puts "Select a location for your #{@choosing}"
+      @choice = gets.chomp!.upcase
+      @player["#{@choice}"] = letter
+      show_board @player_board
+    select_counter = select_counter + 1
+    end
+  counter = counter + 1
+  end
+
+end
+
+# DETERMINING AND DECLARING A WINNER- SIMPLY CHECKS THE SUNK SHIP ARRAYS FOR BOTH PLAYERS FOR A COUNT OF 5. 
+
+def declare_winner
+  if @player_sunk_ships.count == 5
+    puts "#{@user_country} wins! Player 1 wins! "
+    break
+  elsif @computer_sunk_ships.count == 5
+    puts "#{@cpu_country} wins! Computer wins!"
+    break
+  end
+end
 
