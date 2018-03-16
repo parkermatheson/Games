@@ -1,4 +1,5 @@
 @computer = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
+@shot_board = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
 @player_board = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
 
 def comp_select
@@ -109,6 +110,13 @@ def input
   end
 end
 
+# The computer picks a random coordinate
+def comp_input
+  letter = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+  number = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  p letter.sample + number.sample.to_s
+end
+
 def show_board grid
   puts "  # | A | B | C | D | E | F | G | H | I | J "
   letters = %w(A B C D E F G H I J)
@@ -126,6 +134,7 @@ end
 
 def shot which_board, coordinates
   which_board["#{coordinates}"] =~ /[ABCDS]/ ? which_board["#{coordinates}"] = "X" : which_board["#{coordinates}"] = "O"
+  if which_board == @computer 
 end
 
 
@@ -161,12 +170,8 @@ def narrator(script_line_num)
     '4' => "pick your opponent's country",
     '5' => "here is the board",
     '6' => "let's place your ships",
-    '7' => "ship?",
-    '8' => "locations?",
     '9' => "your opponent #{@cpu_country} has set up their board",
     '10' => "#{@user_country} and #{@cpu_country} are at war!",
-    '11' => "here is the board",
-    '12' => "it is your turn",
     '13' => "where will you fire?",
     '14' => "hit",
     '15' => "miss",
@@ -185,16 +190,44 @@ def narrator(script_line_num)
   p prompt[script_line_num]
 end
 
-narrator('10')
 
 
-def user_input_types
-  aim_location
-    board_setup
-    fire_location
-  ship_name
-  country_name
-  quit
-  play_again
+/CODE FOR DETERIMING IF A HIT SUNK A SHIP AND WHAT SHIP IT WAS FOR COMPUTER AND PERSON.
+/REQUIRES THESE VARIABLES
+@computer_sunk_ships = []
+@player_sunk_ships = []
+@player_current_sunk_ship = []
+@computer_current_sunk_ship = []
+
+
+
+def which_sunk result_of_attempt
+  ship_names = ["A", "B", "C", "D", "S"]
+  ships = {  "A" => "Aircraft Carrier", "B" => "Battleship", "C" => "Carrier","D" => "Destroyer", "S" => "Submarine" }
+  i = 0
+  c = 0
+  if result_of_attempt == true
+    5.times do
+      if @player.has_value?(ship_names[i]) == false && @player_sunk_ships.include?(ships.fetch_values(ship_names[i])) == false
+        @player_sunk_ships << ships.fetch_values(ship_names[i])
+        @player_current_sunk_ship << ships.fetch_values(ship_names[i])
+        puts "You sunk a ship!:"
+        puts @player_current_sunk_ship
+        break
+      end
+    i = i + 1
+    end
+    5.times do
+      if @computer.has_value?(ship_names[c]) == false && @computer_sunk_ships.include?(ships.fetch_values(ship_names[c])) == false
+        @computer_sunk_ships << ships.fetch_values(ship_names[c])
+        @computer_current_sunk_ship << ships.fetch_values(ship_names[c])
+        puts "The computer sunk a ship:"
+        puts @computer_current_sunk_ship
+        break
+      end
+    c = c + 1
+    end
+  end
 end
+
 
