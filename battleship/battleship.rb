@@ -216,8 +216,8 @@ def which_sunk result_of_attempt
     5.times do
       if @player.has_value?(ship_names[i]) == false && @player_sunk_ships.include?(ships.fetch_values(ship_names[i])) == false
         @player_sunk_ships << ships.fetch_values(ship_names[i])
-        @player_current_sunk_ship << ships.fetch_values(ship_names[i])
-        puts "You sunk a ship!:"
+        @player_current_sunk_ship = ships.fetch_values(ship_names[i])
+        puts "The computer sunk a ship:"
         puts @player_current_sunk_ship
         break
       end
@@ -227,7 +227,7 @@ def which_sunk result_of_attempt
       if @computer.has_value?(ship_names[c]) == false && @computer_sunk_ships.include?(ships.fetch_values(ship_names[c])) == false
         @computer_sunk_ships << ships.fetch_values(ship_names[c])
         @computer_current_sunk_ship << ships.fetch_values(ship_names[c])
-        puts "The computer sunk a ship:"
+        puts "You sunk a ship!:"
         puts @computer_current_sunk_ship
         break
       end
