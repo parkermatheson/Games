@@ -1,6 +1,100 @@
 @computer = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
 @player_board = { "A1" => "~", "A2" => "~", "A3" => "~", "A4" => "~", "A5" => "~", "A6" => "~", "A7" => "~", "A8" => "~", "A9" => "~", "A10" => "~", "B1" => "~", "B2" => "~", "B3" => "~", "B4" => "~", "B5" => "~", "B6" => "~", "B7" => "~", "B8" => "~", "B9" => "~", "B10" => "~", "C1" => "~", "C2" => "~", "C3" => "~", "C4" => "~", "C5" => "~", "C6" => "~", "C7" => "~", "C8" => "~", "C9" => "~", "C10" => "~", "D1" => "~", "D2" => "~", "D3" => "~", "D4" => "~", "D5" => "~", "D6" => "~", "D7" => "~", "D8" => "~", "D9" => "~", "D10" => "~", "E1" => "~", "E2" => "~", "E3" => "~", "E4" => "~", "E5" => "~", "E6" => "~", "E7" => "~", "E8" => "~", "E9" => "~", "E10" => "~","F1" => "~", "F2" => "~", "F3" => "~", "F4" => "~", "F5" => "~", "F6" => "~", "F7" => "~", "F8" => "~", "F9" => "~", "F10" => "~", "G1" => "~", "G2" => "~", "G3" => "~", "G4" => "~", "G5" => "~", "G6" => "~", "G" => "~", "G8" => "~", "G9" => "~", "G10" => "~", "H1" => "~", "H2" => "~", "H3" => "~", "H4" => "~", "H5" => "~", "H6" => "~", "H7" => "~", "H8" => "~", "H9" => "~", "H10" => "~", "I1" => "~", "I2" => "~", "I3" => "~", "I4" => "~", "I5" => "~", "I6" => "~", "I7" => "~", "I8" => "~", "I9" => "~", "I10" => "~", "J1" => "~", "J2" => "~", "J3" => "~", "J4" => "~", "J5" => "~", "J6" => "~", "J7" => "~", "J8" => "~", "J9" => "~", "J10" => "~"}
 
+def comp_select
+
+  selection = rand(1..3)
+
+
+  case selection
+    when 1
+      # Aircraft Carrier
+          @computer['B1'] = 'A'
+          @computer['B2'] = 'A'
+          @computer['B3'] = 'A'
+          @computer['B4'] = 'A'
+          @computer['B5'] = 'A'
+
+    # Battleship
+          @computer['H5'] = 'B'
+          @computer['H6'] = 'B'
+          @computer['H7'] = 'B'
+          @computer['H8'] = 'B'
+
+    # Cruiser
+          @computer['E4'] = 'C'
+          @computer['F4'] = 'C'
+          @computer['G4'] = 'C'
+
+    # Submarine
+          @computer['J1'] = 'S'
+          @computer['J2'] = 'S'
+          @computer['J3'] = 'S'
+
+   # Destroyer
+          @computer['D8'] = 'D'
+          @computer['E8'] = 'D'
+
+
+    when 2
+      # Aircraft Carrier
+          @computer['E3'] = 'A'
+          @computer['E4'] = 'A'
+          @computer['E5'] = 'A'
+          @computer['E6'] = 'A'
+          @computer['E7'] = 'A'
+
+    # Battleship
+          @computer['A5'] = 'B'
+          @computer['B5'] = 'B'
+          @computer['C5'] = 'B'
+          @computer['D5'] = 'B'
+
+    # Cruiser
+          @computer['G1'] = 'C'
+          @computer['G2'] = 'C'
+          @computer['G3'] = 'C'
+
+    # Submarine
+          @computer['F9'] = 'S'
+          @computer['G9'] = 'S'
+          @computer['H9'] = 'S'
+
+   # Destroyer
+          @computer['I4'] = 'D'
+          @computer['I5'] = 'D'
+
+    when 3
+      # Aircraft Carrier
+          @computer['G3'] = 'A'
+          @computer['G4'] = 'A'
+          @computer['G5'] = 'A'
+          @computer['G6'] = 'A'
+          @computer['G7'] = 'A'
+
+    # Battleship
+          @computer['E2'] = 'B'
+          @computer['F2'] = 'B'
+          @computer['G2'] = 'B'
+          @computer['H2'] = 'B'
+
+    # Cruiser
+          @computer['G1'] = 'C'
+          @computer['G2'] = 'C'
+          @computer['G3'] = 'C'
+
+    # Submarine
+          @computer['B7'] = 'S'
+          @computer['C7'] = 'S'
+          @computer['D7'] = 'S'
+
+   # Destroyer
+          @computer['F9'] = 'D'
+          @computer['F10'] = 'D'
+
+
+end
+end
 
 
 def input
@@ -54,11 +148,11 @@ end
 
 
 
-
 # UI PROMPTS
 # (I know this sucks, but it's functional. refine later.)
-@user_country = "United States"
-@cpu_country = "Canada"
+@user_country = ""
+@cpu_country = ""
+
 def narrator(script_line_num)
   prompt = {
     '1' => "Welcome to BattleShip!",
@@ -86,11 +180,13 @@ def narrator(script_line_num)
     '23' => "Somebody wins",
     '24' => "game over",
     '25' => "do you want to play again?"
+    '26' => "You sunk a ship!"
   }
   p prompt[script_line_num]
 end
 
 narrator('10')
+
 
 def user_input_types
   aim_location
@@ -101,3 +197,4 @@ def user_input_types
   quit
   play_again
 end
+
